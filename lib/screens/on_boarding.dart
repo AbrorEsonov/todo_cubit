@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:todo_cubit/route/app_route.dart';
 import 'package:todo_cubit/utils/colors.dart';
-import 'package:todo_cubit/utils/fonts.dart';
+import 'package:todo_cubit/utils/fonts_styles.dart';
 
 class OnBoardScreen extends StatelessWidget {
   const OnBoardScreen({Key? key}) : super(key: key);
@@ -41,8 +41,8 @@ class OnBoardScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: <Color>[
-                      GreenLight,
-                      GreenDark,
+                      OnBoardLightGreen,
+                      OnBoardDarkGreen,
                     ],
                   ),
                   borderRadius: BorderRadius.all(
@@ -50,7 +50,7 @@ class OnBoardScreen extends StatelessWidget {
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: GreenShadow,
+                      color: greenShadow,
                       blurRadius: 15.0,
                       spreadRadius: 7.0,
                       offset: Offset(0.0, 0.0),

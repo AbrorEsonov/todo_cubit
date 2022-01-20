@@ -8,13 +8,11 @@ import 'package:todo_cubit/utils/colors.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  Bloc.observer = TodoObserver();
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  MyApp() {
-    Bloc.observer = TodoObserver();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -24,17 +22,9 @@ class MyApp extends StatelessWidget {
       ),
     );
     return MaterialApp(
-      title: 'ToDo task',
+      title: 'Todo task',
       theme: ThemeData(
-        canvasColor: GreyBackground,
-        elevatedButtonTheme: ElevatedButtonThemeData(
-            style: ElevatedButton.styleFrom(
-                elevation: 0,
-                onPrimary: Colors.white,
-                primary: Colors.white,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(8))),
-                fixedSize: Size(double.maxFinite, 56))),
+        canvasColor: greyBackColor,
       ),
       debugShowCheckedModeBanner: false,
       initialRoute: AppRouteName.ONBOARD,

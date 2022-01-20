@@ -57,6 +57,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.4"
+  date_format:
+    dependency: "direct main"
+    description:
+      name: date_format
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.5"
   fake_async:
     dependency: transitive
     description:
@@ -88,15 +95,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  gradient_app_bar:
+  intl:
     dependency: "direct main"
     description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "37c4b1bea68eebaf29627cc696fcf8ed4701592e"
-      url: "https://github.com/TinyProgrammers/GradientAppBar.git"
-    source: git
-    version: "0.1.4"
+      name: intl
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.17.0"
   matcher:
     dependency: transitive
     description:

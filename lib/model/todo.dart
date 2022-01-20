@@ -1,7 +1,7 @@
-class Todo{
+class Todo {
   String todoMessage;
   bool? isCompleted;
-  int? date;
+  String? date;
 
-  Todo({required this.todoMessage, this.isCompleted, this.date});
+  Todo({required this.todoMessage,this.isCompleted, this.date});
 }

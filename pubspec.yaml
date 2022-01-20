@@ -13,13 +13,11 @@ dependencies:
 
   flutter_svg: ^0.22.0
   flutter_bloc: ^7.0.1
+  intl: ^0.17.0
+  date_format: ^2.0.5
 
   cupertino_icons: ^1.0.2
 
-
-  gradient_app_bar:
-    git:
-      url: https://github.com/TinyProgrammers/GradientAppBar.git
 
 dev_dependencies:
   flutter_test:
